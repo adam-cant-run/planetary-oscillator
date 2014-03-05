@@ -37,7 +37,7 @@ Oscillator.prototype.init = function() {
 
 Oscillator.prototype.run = function() {
     var self = this;
-    window.setInterval(function() { self.main_loop.call(self); }, 10);
+    window.setInterval(function() { self.main_loop.call(self); }, 20);
 };
 
 Oscillator.prototype.main_loop = function() {
@@ -83,7 +83,7 @@ Oscillator.prototype.drawPlanet = function() {
 };
 
 Oscillator.prototype.movePlanet = function() {
-    this.time += (Math.PI / 100);
+    this.time += (Math.PI / 40);
     this.time = this.time % (2 * Math.PI);
 
     var delta = (100 * Math.sin(this.time));
