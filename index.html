@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Planetary Oscillator</title>
+    <script language="javascript" src="oscillator.js"></script>
+    <script language="javascript">
+      function doit() {
+        var app = new Oscillator();
+        app.init();
+        app.run();
+      };
+    </script>
+  </head>
+
+  <body onload="doit()">
+    <canvas id="canvas" width="400px" height="400px"></canvas>
+  </body>
+</html>
